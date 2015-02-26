@@ -57,3 +57,8 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'simplecov'
 end
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular'
+  gem 'rails-assets-angular-ui-router'
+end
