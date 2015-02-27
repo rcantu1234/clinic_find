@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :statics
+
   devise_for :users
   resources :users
 
