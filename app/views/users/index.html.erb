@@ -18,14 +18,14 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
+        <td><%= user.first_name.capitalize %></td>
+        <td><%= user.last_name.capitalize %></td>
         <td><%= user.age %></td>
-        <td><%= user.gender %></td>
+        <td><%= user.gender.capitalize %></td>
         <td><%= user.height %></td>
         <td><%= user.weight %></td>
-        <td><%= user.diseases %></td>
-        <td><%= user.allergies %></td>
+        <td><%= user.diseases.capitalize %></td>
+        <td><%= user.allergies.capitalize %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
