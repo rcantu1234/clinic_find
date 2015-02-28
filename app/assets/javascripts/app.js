@@ -6,14 +6,14 @@ angular.module('app', ['app.controllers','ui.router'])
 		templateUrl: 'templates/home.html',
 		controller: 'HomeCtrl'
 	})
-	.state('clinicMap',{
-		url:'/clinicMap',
+	.state('clinicmap',{
+		url:'/clinicmap',
 		templateUrl: 'templates/clinicmap.html',
 		controller: 'ClinicCtrl'
 	})
 	.state('appointments',{
 		url: '/appointments',
-		templateUrl: 'templates/appointments',
+		templateUrl: 'templates/appointments.html',
 		controller: 'AppointCtrl'
 	});
 	$urlRouterProvider.otherwise("/");
