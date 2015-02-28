@@ -3,12 +3,12 @@ angular.module('app', ['app.controllers','ui.router'])
 	$stateProvider
 	.state('home',{
 		url: '/',
-		templateUrl: 'templates/home.html',
+		templateUrl: 'templates/Home.html',
 		controller: 'HomeCtrl'
 	})
 	.state('clinicMap',{
 		url:'/clinicMap',
-		templateUrl: 'templates/clinicMap.html',
+		templateUrl: 'templates/ClinicMap.html',
 		controller: 'ClinicCtrl'
 	})
 	.state('Appointments',{
