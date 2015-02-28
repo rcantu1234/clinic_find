@@ -3,17 +3,17 @@ angular.module('app', ['app.controllers','ui.router'])
 	$stateProvider
 	.state('home',{
 		url: '/',
-		templateUrl: 'templates/Home.html',
+		templateUrl: 'templates/home.html',
 		controller: 'HomeCtrl'
 	})
 	.state('clinicMap',{
 		url:'/clinicMap',
-		templateUrl: 'templates/ClinicMap.html',
+		templateUrl: 'templates/clinicmap.html',
 		controller: 'ClinicCtrl'
 	})
-	.state('Appointments',{
-		url: '/Appointments',
-		templateUrl: 'templates/Appointments',
+	.state('appointments',{
+		url: '/appointments',
+		templateUrl: 'templates/appointments',
 		controller: 'AppointCtrl'
 	});
 	$urlRouterProvider.otherwise("/");
