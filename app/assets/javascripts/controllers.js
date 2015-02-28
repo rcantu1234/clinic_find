@@ -11,5 +11,6 @@ angular.module('app.controllers',[])
 
 .controller('AppointCtrl', function($scope,$http,$window){
 	console.log('appoint control');
+	console.log('testing git branching');
 	
 });
