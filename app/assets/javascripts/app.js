@@ -2,18 +2,18 @@ angular.module('app', ['app.controllers','ui.router'])
 .config(function($stateProvider,$urlRouterProvider){
 	$stateProvider
 	.state('home',{
-		url: '/',
-		templateUrl: 'templates/home.html',
+		url: '/home',
+		templateUrl: 'templates/Home.html',
 		controller: 'HomeCtrl'
 	})
 	.state('clinicmap',{
 		url:'/clinicmap',
-		templateUrl: 'templates/clinicmap.html',
+		templateUrl: 'templates/ClinicMap.html',
 		controller: 'ClinicCtrl'
 	})
 	.state('appointments',{
 		url: '/appointments',
-		templateUrl: 'templates/appointments.html',
+		templateUrl: 'templates/Appointments.html',
 		controller: 'AppointCtrl'
 	});
 	$urlRouterProvider.otherwise("/");
