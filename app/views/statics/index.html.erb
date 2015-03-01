@@ -1,6 +1,28 @@
-<div ng-app="app">
-  <div ui-view>
-  </div>
-</div>
+<div ng-app="app" ng-controller="HomeCtrl">
+	<div class="home_btns_wrapper">
+  		<a href="#" ui-sref="clinicmap" >
+  			<div class="find_clinic_btn" >Find a Clinic
+  			</div>
+  		</a>
+		<a href="#" ui-sref="appointments" >
+			<div class="appt_btn">My Appointments
+			</div>
+		</a>
+		<a ui-sref="home" >
+			<div class="appt_btn">Home
+			</div>
+		</a>
+	</div>
+
+
+	<div ui-view>
+		<h3 class="disclaimer">
+  		If this is an emergency call 911.
+		</h3>
+<!--V USER PROMPT V-->
+		<h2>
+  		Hi {{user}}!  What would you like to do?
+		</h2>
+	</div>
 
 
