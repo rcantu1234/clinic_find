@@ -1,33 +1,27 @@
-<div>
-  Appointments
+<div class="page_title">
+  Appointments Page
 </div>
-
-
-<!-- V HEADER V -->
-<header class="appt_header">
-
-	<!-- v BACK BUTTON v -->
-	<div class="back_wrapper">
-		<img class"back_btn" ng-click="goHome()">
-	</div>
-
-	<!-- v LOGO v -->
-	<div class="logo_wrapper">
-		<img class="logo_img">
-		<div class="logo_text">yo</div>
-	</div>
-	
-	<!-- V BUTTONS TO BE PLACED IN HAMBURGER MENU V -->
-	<div class="home_btn" ng-click="goHome()"></div>
-	<div class="sign_out"></div>
-
-</header>
-
-<!-- ======================== -->
 
 <!-- ADD APPOINTMENT BUTTON -->
 <div class="appt_btn_wrapper">
-	<div></div>
+	<div>Add Appointment</div>
+</div>
 
+<!--The displayed list of appointments-->
+<div class="appt_list">
+	Your Appointments:
+	<table>
+            <tr id="column-headers">
+               <th class="name" ng-click="onNameClick()">Place</th>
+               <th>Date</th>
+               <th>Time</th>
+            </tr>
+
+            <tr id="state-list" ng-repeat="state in newArray">
+               <td>{{state.name}}</td>
+               <td>{{state.abbreviation}}</td>
+               <td>{{state.name}}</td>
+            </tr>
+    </table>
 </div>
 

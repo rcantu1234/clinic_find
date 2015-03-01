@@ -9,9 +9,10 @@ angular.module('app.controllers',[])
 	$scope.goClinicMap=function(){
 		state.go('clinicmap');
 	}
+
 	$scope.goAppointments=function(){
 	state.go('appointments');
-	}
+
 })
 
 .controller('ClinicCtrl', function($scope,$http,$window,$state){
@@ -26,5 +27,8 @@ angular.module('app.controllers',[])
 	$scope.goHome = function() {
         $state.go('home');
         }
+    $http.get('http://tiny-pizza-server.herokuapp.com/collections/fancy-table').success(function(response){
+	$scope.user =response[].name;
+	}
 	
 });
