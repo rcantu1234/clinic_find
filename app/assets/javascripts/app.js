@@ -8,7 +8,7 @@ angular.module('app', ['app.controllers','ui.router'])
 	})
 	.state('clinicmap',{
 		url:'/clinicmap',
-		templateUrl: 'templates/clinicmap.html',
+		templateUrl: 'templates/clinicmaps.html',
 		controller: 'ClinicCtrl'
 	})
 	.state('appointments',{
