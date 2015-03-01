@@ -1,16 +1,29 @@
 angular.module('app.controllers',[])
-.controller('HomeCtrl', function($scope,$http,$window){
+.controller('HomeCtrl', function($scope,$http,$window,$state){
 	console.log('home control');
+	$http.get('http://tiny-pizza-server.herokuapp.com/collections/fancy-table').success(function(response){
+	$scope.user =response.username;
+	})
 
+	$scope.goClinicMap=function(){
+		state.go('clinicmap');
+	}
+	$scope.goAppointments=function(){
+	state.go('appointments');
+	}
 })
 
-.controller('ClinicCtrl', function($scope,$http,$window){
+.controller('ClinicCtrl', function($scope,$http,$window,$state){
 	console.log('clinic control');
-
+	$scope.goHome = function() {
+        $state.go('home');
+        }
 })
 
-.controller('AppointCtrl', function($scope,$http,$window){
+.controller('AppointCtrl', function($scope,$http,$window,$state){
 	console.log('appoint control');
-	console.log('testing git branching');
+	$scope.goHome = function() {
+        $state.go('home');
+        }
 	
 });

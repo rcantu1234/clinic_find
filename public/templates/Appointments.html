@@ -1,6 +1,5 @@
 <div>
   Appointments
-  <button ng-click="goHome()">Go Home</button>
 </div>
 
 
@@ -9,7 +8,7 @@
 
 	<!-- v BACK BUTTON v -->
 	<div class="back_wrapper">
-		<img class"back_btn">
+		<img class"back_btn" ng-click="goHome()">
 	</div>
 
 	<!-- v LOGO v -->
@@ -19,7 +18,7 @@
 	</div>
 	
 	<!-- V BUTTONS TO BE PLACED IN HAMBURGER MENU V -->
-	<div class="home_btn"></div>
+	<div class="home_btn" ng-click="goHome()"></div>
 	<div class="sign_out"></div>
 
 </header>
