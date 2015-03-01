@@ -1,4 +1,4 @@
-<div ng-app="app" ng-controller="HomeCtrl">
+<div ng-app="app">
 	<div class="home_btns_wrapper">
   		<a href="#" ui-sref="clinicmap" >
   			<div class="find_clinic_btn" >Find a Clinic
@@ -8,9 +8,7 @@
 			<div class="appt_btn">My Appointments.
 			</div>
 		</a>
-
 	</div>
-
 
 	<div ui-view>
 		<h3 class="disclaimer">
@@ -22,11 +20,12 @@
 		</h2>
 	</div>
 
-	<footer ng-controller="HomeCtrl">
+	<footer >
 		<a ui-sref="home" >
 			<div class="appt_btn">Home
 			</div>
 		</a>
 	</footer>
+</div>
 
 
