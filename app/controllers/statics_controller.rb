@@ -5,7 +5,7 @@ class StaticsController < ApplicationController
   # GET /statics.json
   def index
     @statics = Static.all
-    @user = User.find(params[:user_id])
+    # @users = User.find(params[:user_id])
   end
 
   # GET /statics/1
