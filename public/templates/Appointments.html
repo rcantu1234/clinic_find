@@ -12,12 +12,12 @@
 	Your Appointments:
 	<table>
             <tr id="column-headers">
-               <th class="name" ng-click="onNameClick()">Place</th>
+               <th>Place</th>
                <th>Date</th>
                <th>Time</th>
             </tr>
 
-            <tr id="state-list" ng-repeat="state in newArray">
+            <tr id="state-list" ng-repeat="state in states">
                <td>{{state.name}}</td>
                <td>{{state.abbreviation}}</td>
                <td>{{state.name}}</td>
