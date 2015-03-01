@@ -67,6 +67,8 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
+    rescue StandardError => e
+      render json: { message: e.message, status: 404}.to_json, status: 404
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
