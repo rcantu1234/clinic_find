@@ -31,6 +31,11 @@ angular.module('app.controllers',[])
         }
     $http.get('/appointments.json').success(function(response){
 	$scope.doctor_name =response[0].doctor_name;
+		// function doctor_name(){
+		// for(var i=0; i<appointments.length; i++){
+		// $scope.doctor_name =response[i].doctor_name;
+		// };
+	
 	$scope.appointment_time =response[0].appointment_time;
 	$scope.location =response[0].location;
 	$scope.doctor_phone_number =response[0].doctor_phone_number;
