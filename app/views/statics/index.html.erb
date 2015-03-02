@@ -2,22 +2,26 @@
 
 	<header>
 		<!-- V LOGO V --> 
-		<img class="logo_img">
-		<h2 class="logo_text">Clinic Find</h2>
-
-		<!-- V HOME BUTTON & SIGN-OUT SOON V -->
-		<a ui-sref="home" >
-		<div class="appt_btn">Home
+		<div class="left_header"
+			<%= image_tag "logo_img.png", class: "logo" %>
+			<h2 class="logo_text">Clinic Find</h2>
 		</div>
-		</a>
+		<!-- V HOME BUTTON & SIGN-OUT SOON V -->
+		<div class="right_header">
+			<a ui-sref="home">
+			<!-- v why was home appt_btn? v -->
+			<div class="home_btn">Home
+			</div>
+			</a>
+		</div>
 	</header>
 
 	<div ui-view>
 
-	<!-- V IRON YARD COPYRIGHT V -->
-	</div>
-		<img class="iy_logo" src="theironyard.png">
+	<!-- V IRON YARD PROJECT V -->
+	<!-- </div class="iron_yard_proj">
+		<%= image_tag "theironyard.png", class: "iy_logo" %>
 		<h4>An Iron Yard Academy Project</h4>
 	</div>
-
+ -->
 
