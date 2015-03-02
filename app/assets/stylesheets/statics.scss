@@ -12,21 +12,41 @@ html {
   box-sizing: inherit;
 }
 
+body{
+	background-color: #ededef;
+}
+
+
 header{
  display: inline-block;
-width: 100%;
+width: 92%;
+margin-right: 4%;
+margin-left: 4%;
 box-sizing: border-box;
 text-align: center;
 border-bottom: 0.2em solid #354350;
+background-color: white;
+border-top-left-radius: 3em;
+border-top-right-radius: 3em;
+	.logo{
+		float: left;
+	}
+	.logo_text{float: left;
+padding-top: 1.4em;
+font-size: 32px;
+font-weight: 600;
+color: rgba(53, 67, 80, 0.83);}
   .left_header{
+  	display: inline-block;
     padding: 2%;
     float:left;
     overflow: hidden;
   }
   .right_header{
     padding: 2%;
-    float:right;
-    overflow: hidden;
+float: right;
+overflow: hidden;
+padding-top: 86px;
     .home_btn{
       float:left;
       margin-right: 1em;
@@ -66,8 +86,9 @@ color: rgba(161, 20, 20, 0.55);  }
   	text-align: left;
 font-size: 1.51em;
 padding-top: 6px;
-
+padding-right: 8px;
 padding-left: 8px;
+font-weight: 600;
   }
 }
 .home_btns_wrapper{
@@ -90,7 +111,7 @@ padding-left: 8px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: left;
-  color: #445561;
+  color: #18A9CF;
   overflow: hidden;
   text-align: center;
   font-size: 2em;
@@ -104,7 +125,7 @@ padding-left: 8px;
     top: 0;
     overflow: hidden;
     color: #F1F1F2;
-    background: #f15a52;
+    background: #60c4de;
   }
   
   &:before {
@@ -149,7 +170,7 @@ padding-left: 8px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: left;
-  color: #445561;
+  color: #18A9CF;
   overflow: hidden;
   text-align: center;
   font-size: 2em;
@@ -163,7 +184,7 @@ padding-left: 8px;
     top: 0;
     overflow: hidden;
     color: #F1F1F2;
-    background: #f15a52;
+    background: #60c4de;
   }
   
   &:before {
@@ -208,4 +229,109 @@ padding-left: 8px;
 		border: 1px solid red;
 	}
 }
+}
+
+// V MAP PAGE V
+.pg_title{
+	width: 100%;
+text-align: center;
+font-size: 2em;
+font-weight: 600;
+padding-top: 3%;
+padding-bottom: 3%;
+}
+.map_wrapper{
+	width: 75%;
+margin-left: 12%;
+text-align: center;
+margin-right: 12%;
+
+}
+
+
+.iron_yard_proj{
+.iy_logo{float: left;
+margin-left: 12.5%;}
+h4{font-size: 1em;
+padding-top: 1.4744em;
+float: left;
+color: #717D89;
+}
+
+}
+
+// V APPOINTMENTS V
+.appt_pg_title{width: 100%;
+text-align: center;
+font-size: 2em;
+font-weight: 600;
+padding-top: 3%;
+padding-bottom: 3%;}
+
+// ADD APPT
+appt_btn_wrapper{padding-left: 27%;
+font-size: 2em;}
+[data-wipe] {  
+	margin-left: 27%;
+	font-size: 2em;
+  	margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 12px 18px;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid #445561;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+  // color: #18A9CF;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2em;
+  
+  &:before, &:after {
+    content: attr(data-wipe);
+    padding-top: inherit;
+    padding-bottom: inherit;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    color: #F1F1F2;
+    background: #60c4de;
+  }
+  
+  &:before {
+    left: 0;
+    text-indent: 18px;
+    width: 0;
+  }
+  
+  &:after {
+    padding-left: inherit;
+    padding-right: inherit;
+    left: 100%;
+    text-indent: calc(-100% - 36px);
+    transition: $duration + s $easing;
+  }
+  
+  &:hover {
+    &:before {
+      width: 100%;
+      transition: width $duration + s $easing;
+    }
+    
+    &:after {
+      left: 0;
+      text-indent: 0;
+      transition: 0s $duration + s $easing;
+    }
+  }
+  	
+  }
+
+  .btn_text_appt{
+  	display: inline-block;
+font-size: 1.5em;
+padding-left: 1%;
 }
