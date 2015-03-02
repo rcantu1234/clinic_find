@@ -2,14 +2,15 @@
 
 	<header>
 		<!-- V LOGO V --> 
-		<%= image_tag "logo_img.png", class: "logo" %>
-		<h2 class="logo_text">Clinic Find</h2>
-
+		<div class="left_header"
+			<%= image_tag "logo_img.png", class: "logo" %>
+			<h2 class="logo_text">Clinic Find</h2>
+		</div>
 		<!-- V HOME BUTTON & SIGN-OUT SOON V -->
-		<div class="right_header_btns">
+		<div class="right_header">
 			<a ui-sref="home">
 			<!-- v why was home appt_btn? v -->
-			<div class="appt_btn">Home
+			<div class="home_btn">Home
 			</div>
 			<!-- v replace w signout btn v -->
 			<div class="signout_btn">Signout</div>
