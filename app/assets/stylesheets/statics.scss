@@ -16,11 +16,33 @@ body {
   vertical-align: top; }
 
 
-.back_wrapper{
-	float: left;
-	border-right: 3px solid grey;
-	width: 57px;
-	height: 60px;
+header{
+	display: inline-block;
+	border: 1px solid red;
+	// V LOGO V
+	.logo_img{
+		float: left;
+		border: 1px solid blue;
+	}
+	h2{
+		float: left;
+		border: 1px solid orange;
+	}
+
+	// V HOME BUTTON $ SIGN-OUT SOON V
+	.right_header_btns{
+		float: right;
+		border: 1px solid blue;
+		.appt_btn{
+			float: left;
+		}
+		.signout_btn{
+			float: left;
+		}
+	}
+
+
 }
+
 
 
